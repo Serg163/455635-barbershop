@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Baxter of California</title>
   </head>
   <body>
     <header class="main-header">
@@ -27,9 +27,9 @@
             <a href="contacts.html">Контакты</a>
           </li>
         </ul>
-        <div class="user-block">
-          <a class="login" href="#">Вход</a>
-        </div>       
+        <ul class="user-navigation">
+          <li class="login-link">Вход</li>
+        </ul>       
       </nav>
     </header>
     <main class="container">
@@ -51,26 +51,28 @@
         </ul>
       </div>
       <section class="product-photos">
+        <h2 class="visually-hidden">Изображения товара</h2>
         <div class="gallery-img">
-          <img src="img/product-big.jpg" alt="Baxter of California" width="460px" 
-             height="498px">
+          <img src="img/product-big.jpg" alt="Baxter of California" width="460" 
+             height="498">
         </div> 
         <ul>
           <li>
             <img src="img/photo-item-1.jpg" alt="photo-1"
-              width="140px" height="149px">
+              width="140" height="149">
           </li>
           <li>
             <img src="img/photo-item-2.jpg" alt="photo-2" 
-              width="140px" height="149px">
+              width="140" height="149">
           </li>
           <li>
             <img src="img/photo-item-3.jpg" alt="photo-3"
-              width="140px" height="149px">
+              width="140" height="149">
           </li>
         </ul> 
       </section>
       <section class="product-info">
+        <h2 class="visually-hidden">Описание товара</h2>
         <span class="product-available">Есть в наличие</span>
         <span class="product-article">Артикул: Dexter-ae</span>
         <p class="product-text">
@@ -81,10 +83,10 @@
           для бритья, крем после бритья, шампунь. Набор также может
           стать отличным подарком.
         </p>
-        <div class="product-price">
+        <p class="product-price">
           <span>2900 Руб.</span>
           <a class="btn" href="#">Купить</a>
-        </div>
+        </p>
         <h3>В набор входят:</h3>
         <ul>
           <li>Средство для умывания (50 мл)</li>
@@ -128,14 +130,20 @@
       <h2 class="modal-login-title">Личный кабинет</h2>
       <p>Введите пожалуйста свой логин и пароль</p>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <input class="login-icon-user" type="text" name="login" placeholder="Логин">
-        <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
-        <label class="login-checkbox">
-          <input type="checkbox" name="remember" class="visually-hidden">
-          Запомните меня
-        </label>
+        <p>
+          <input class="login-icon-user" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+          <input class="login-icon-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p>
+          <label class="login-checkbox">
+            <input type="checkbox" name="remember" class="visually-hidden">
+            Запомните меня
+          </label>
           <a href="#" class="restore">Я забыл пароль</a>
-          <button class="btn" type="submit">Войти</button>      
+        </p>
+        <button class="btn" type="submit">Войти</button>      
       </form>  
     </section>
     <section class="modal modal-map">
