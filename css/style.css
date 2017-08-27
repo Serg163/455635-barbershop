@@ -46,17 +46,84 @@ a {
   background-color: #663d15;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header {
+  min-height: 285px;
+  margin-bottom: 75px;
+}
+
+.inner-page .main-header {
+  background-color: #000000;
+  margin-bottom: 50px;
+  min-height: 70px;
+}
+
 .main-navigation {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
 
+  background-color: transparent;
+  min-height: 285px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner-page .main-navigation {
+  min-height: 70px;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.index-logo {
+  width: 368px;
+  height: 204px;
+  order: 2;
+}
+
+.inner-page .main-header-logo {
+  width: 111px;
+  height: 24px;
+  padding: 23px 20px;
+  order: 0;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
   background-color: #000000;
 }
 
-.site-navigation,
-.user-navigation {
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  min-height: 70px;
+  width: 620px;
+  display: flex;
+}
+
+.user-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-height: 70px;
+  width: 140px;
+}
+
+.inner-page .user-navigation {
+  margin-left: auto;
 }
 
 .site-navigation a,
@@ -71,12 +138,23 @@ a {
   background-color: #242424;
 }
 
+.features {
+  margin-bottom: 80px;
+}
+
 .features-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  min-height: 170px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .features-item {
   text-align: center;
+  min-height: 170px;
+  width: 300px;
 }
 
 .features-item .features-name {
@@ -92,6 +170,20 @@ a {
   background-image: url(../img/bg-main-block.png);
   background-position: 0 0;
   background-repeat: repeat;
+  padding: 50px 80px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.news {
+  width: 380px;
+  min-height: 315px;
+}
+
+.gallery {
+  width: 300px;
+  min-height: 315px;
 }
 
 .index-columns h2 {
@@ -124,12 +216,20 @@ a {
 }
 
 .page-title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
   font-size: 30px;
   line-height: 42px;
 }
 
 .breadcrumbs {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
   list-style: none;
+  min-height: 24px;
+  display: flex;
 }
 
 .breadcrumbs a {
@@ -143,6 +243,16 @@ a {
 
 .breadcrumbs-current {
   color: #aba9a7;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 180px;
+  min-height: 687px;
 }
 
 .filter fieldset {
@@ -170,13 +280,31 @@ a {
   opacity: 0.5;
 }
 
+.catalog {
+  width: 700px;
+  min-height: 687px;
+}
+
 .catalog-list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
 .catalog-item {
   background-color: #f7f7f7;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  min-height: 285px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-item:hover {
@@ -210,7 +338,11 @@ a {
 }
 
 .paginator-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  min-height: 47px;
+  display: flex;
 }
 
 .paginator-item a {
@@ -234,8 +366,17 @@ a {
   background-color: #ffffff;
 }
 
+.product-photos {
+  width: 460px;
+  min-height: 677px;
+}
+
 .product-photo-preview {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .product-photo-preview li {
@@ -258,6 +399,11 @@ a {
   background-color: #e5e5e5;
 }
 
+.product-info {
+  width: 390px;
+  min-height: 667px;
+}
+
 .product-info h3 {
   font-size: 24px;
   line-height: 30px;
@@ -275,6 +421,24 @@ a {
 
   background-position: 0 0;
   background-repeat: repeat;
+  margin-top: 65px;
+  min-height: 180px;
+  padding: 60px 0;
+}
+
+.inner-page .main-footer {
+  margin-top: 45px;
+}
+
+.main-footer .container {
+  display: flex;
+}
+
+.footer-contacts {
+  width: 320px;
+  margin: 0;
+  min-height: 100px;
+  margin-right: 80px;
 }
 
 .footer-contacts a {
@@ -289,6 +453,8 @@ a {
 
 .footer-social {
   text-align: center;
+  width: 145px;
+  min-height: 100px;
 }
 
 .footer-social ul {
@@ -301,6 +467,10 @@ a {
 
 .footer-copyright {
   text-align: center;
+  width: 150px;
+  margin: 0;
+  min-height: 100px;
+  margin-left: auto;
 }
 
 .footer-copyright .btn:hover,
